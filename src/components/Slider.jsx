@@ -28,7 +28,7 @@ const MySlider = () => {
             }
           },
           {
-            breakpoint: 430,
+            breakpoint: 480,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
@@ -44,21 +44,21 @@ const MySlider = () => {
     <section className='px-8 mx-auto container py-10'>
       <Slider {...settings}>
         <div>
-         <img className='w-full object-cover' src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/196881c1ecfbaad5.jpg?q=20" alt="" />
+         <img className='w-full object-contain lg:object-cover' src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/196881c1ecfbaad5.jpg?q=20" alt="" />
         </div>
         <div>
-         <img className='w-full object-cover' src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/f39cd50df3682fa7.jpg?q=20" alt="" />
+         <img className='w-full object-contain lg:object-cover' src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/f39cd50df3682fa7.jpg?q=20" alt="" />
         </div>
         <div>
-       <img className='w-full object-cover' src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/8895f907e967aed9.png?q=20" alt="" />
+       <img className='w-full object-contain lg:object-cover' src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/8895f907e967aed9.png?q=20" alt="" />
         </div>
         <div>
-       <img className='w-full object-cover' src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/aa1b2bdcf519b468.jpg?q=20" alt="" />
+       <img className='w-full object-contain lg:object-cover' src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/aa1b2bdcf519b468.jpg?q=20" alt="" />
         </div>
 
 
         <div>
-       <img className='w-full object-cover' src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/f39cd50df3682fa7.jpg?q=20" alt="" />
+       <img className='w-full object-contain lg:object-cover' src="https://rukminim1.flixcart.com/fk-p-flap/1600/270/image/f39cd50df3682fa7.jpg?q=20" alt="" />
         </div>
 
 

@@ -47,10 +47,18 @@ const Navbar = () => {
         <img className='-ml-10 lg:-ml-0' src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt="Logo" />
       </div>
       {/* Middle section */}
-      <div className="relative ">
+      <div className="hidden md:block lg:relative ">
         <input type="text" placeholder="Search Your Products and Brands and More" className="border bg-gray-100 border-gray-300 w-full lg:w-[700px] py-2 px-12 rounded-lg font-poppins focus:outline-none " />
         <CiSearch size={24} className="absolute top-2 left-4 text-gray-500" />
       </div>
+
+
+
+
+
+
+
+
       {/* Last section */}
       <div className="flex items-center">
         {/* Hamburger menu */}
@@ -59,6 +67,15 @@ const Navbar = () => {
             <HiOutlineDotsVertical size={24} color='black' />
           </button>
         </div>
+
+
+                       {/* New icon for search on smaller screens */}
+  <div className="lg:hidden">
+            <CiSearch size={30} color='black' />
+          </div>
+
+
+
         {/* Desktop view menu items */}
         <div className="hidden lg:flex lg:space-x-10 items-center">
           <div  onMouseEnter={showSubMenuOnHover} 
@@ -68,7 +85,7 @@ const Navbar = () => {
              
               className="relative flex gap-2 items-center cursor-pointer"
             >
-              <Link to={''} className="text-gray-700 hover:text-gray-900  font-poppins">Login</Link>
+              <Link to={''} className="text-gray-700 hover:text-gray-900  text-base font-poppins">Login</Link>
               <FaAngleDown />
               {/* Sub-menu */}
               {showSubMenu && (
@@ -113,11 +130,11 @@ const Navbar = () => {
           </div>
           <div className='flex space-x-2'>
             <FaShoppingCart size={24} color='black' />
-            <Link to={''} className="text-gray-700 hover:text-gray-900  font-poppins">Cart</Link>
+            <Link to={''} className="text-gray-700 hover:text-gray-900 text-base  font-poppins">Cart</Link>
           </div>
           <div className='flex space-x-2'>
             <CiShop size={24} color='black' />
-            <Link to={''} className="text-gray-700 hover:text-gray-900  font-poppins">Become a seller</Link>
+            <Link to={''} className="text-gray-700 hover:text-gray-900 text-base  font-poppins">Become a seller</Link>
           </div>
 
           <div 
@@ -167,6 +184,10 @@ const Navbar = () => {
 
 
         </div>
+
+  
+        
+
         {/* Mobile view menu items */}
         <motion.div
           className={`lg:hidden absolute top-16 right-4 bg-white rounded-lg shadow-lg ${menuOpen ? 'block' : 'hidden'}`}
